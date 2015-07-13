@@ -2,5 +2,5 @@
 
 int main()
 {
-	printf("foo\cbar");
+  printf("foo\cbar");
 }

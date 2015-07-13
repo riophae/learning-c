@@ -2,10 +2,10 @@
 
 int main()
 {
-	int c, d;
+  int c, d;
 
-	while ((d = (c = getchar() != EOF)))
-		printf("%d %d\n", c, d);
+  while ((d = (c = getchar() != EOF)))
+    printf("%d %d\n", c, d);
 
-	printf("%d %d\n", c, d);
+  printf("%d %d\n", c, d);
 }
