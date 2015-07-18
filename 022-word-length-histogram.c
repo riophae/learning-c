@@ -11,8 +11,6 @@ int main()
   int nwordlen[MAX_WORD_LENGTH];
   int i, j;
   int c, s = OUT_WORD, w = 0;
-  int asterisks[MAX_WORD_LENGTH];
-  int aster;
 
   for (i = 1; i <= MAX_WORD_LENGTH; i++) {
     nwordlen[i] = 0;
