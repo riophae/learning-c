@@ -6,7 +6,7 @@ int main(void) {
   int max_length = -1;
   char c;
 
-  printf("Input some lines of sentence and the lenght of the longest line will be printed.\n");
+  printf("Input some lines of sentence, then the length of the longest line will be printed.\n");
 
   while ((c = getchar()) != EOF) {
     if (c == '\n') {

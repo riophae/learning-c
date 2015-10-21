@@ -13,7 +13,7 @@ int main(void) {
     if (c == '\n') break;
   }
 
-  printf("checksum: %d\n", checksum);
+  printf("Checksum: %d\n", checksum);
 
   return EXIT_SUCCESS;
 }
