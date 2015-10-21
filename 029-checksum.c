@@ -7,15 +7,11 @@ int main(void) {
 
   printf("Input any characters then press ENTER to calculate checksum: \n");
 
-  c = getchar();
-  printf("Original input: ");
-
-  while (c != '\n') {
+  while ((c = getchar()) != EOF) {
     checksum += c;
     putchar(c);
-    c = getchar();
+    if (c == '\n') break;
   }
-  putchar('\n');
 
   printf("checksum: %d\n", checksum);
 
