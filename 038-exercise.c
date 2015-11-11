@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define NUL '\0'
 #define MAX_LENGTH 127
 
 void copy_n(char dst[], char src[], int n);
