@@ -2,16 +2,23 @@
 #include <stdlib.h>
 
 int main(void) {
-  int n;
-  printf("Input n and then calculate the square root of it:\n");
-  scanf("%d", &n);
+  float number;
+  printf("Enter a number:\n");
+  scanf("%f", &number);
 
-  float r0, r1 = 1.0;
+  if (number < 0) {
+    printf("Cannot compute the square root of a negative number!\n");
+    return EXIT_FAILURE;
+  }
+
+  float last_guess, new_guess = 1;
+  int i = 0;
   do {
-    r0 = r1;
-    r1 = (n / r0 + r0) / 2;
-  } while (r1 != r0);
+    last_guess = new_guess;
+    new_guess = (last_guess + number / last_guess) / 2;
+    printf("%.15e\n", new_guess);
+  } while (last_guess != new_guess);
 
-  printf("Sqaure root of %d is: %f\n", n, r1);
+  printf("Sqaure root of %f is: %.15e\n", number, new_guess);
   return EXIT_SUCCESS;
 }
